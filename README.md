@@ -147,7 +147,13 @@ This will bootstrap a Debian stretch image, you will get a rootfs tarball named 
 
 Building the rk-debain rootfs with debug:
 
-    # VERSION=debug ARCH=${ARCH} ./mk-rootfs-stretch.sh  && ./mk-image.sh
+- armhf:
+
+    `$ VERSION=debug ARCH=${ARCH} ./mk-rootfs-stretch.sh  && ./mk-image.sh`
+
+- arm64
+
+    `$ VERSION=debug ARCH=${ARCH} ./mk-rootfs-stretch-arm64.sh  && ./mk-image.sh`
 
 This will install Rockchip specified packages and hooks on the standard Debian rootfs and generate an ext4 format rootfs image at `rootfs/linaro-rootfs.img` .
 
@@ -218,7 +224,13 @@ This will bootstrap a Debian stretch image, you will get a rootfs tarball named 
 
 Building the rk-debain rootfs with debug:
 
-    $ VERSION=debug ARCH=${ARCH} ./mk-rootfs-stretch.sh  && ./mk-image.sh
+- armhf:
+
+    `$ VERSION=debug ARCH=${ARCH} ./mk-rootfs-stretch.sh  && ./mk-image.sh`
+
+- arm64
+
+    `$ VERSION=debug ARCH=${ARCH} ./mk-rootfs-stretch-arm64.sh  && ./mk-image.sh`
 
 This will install Rockchip specified packages and hooks on the standard Debian rootfs and generate an ext4 format rootfs image at `rootfs/linaro-rootfs.img` .
 
